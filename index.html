@@ -1,0 +1,135 @@
+<html>
+<head>
+	<title>Understanding the CSS Box Model</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	});
+	</script>
+	<style type="text/css">
+		.main-container{
+			width: 800px;
+			margin: 0 auto;
+		}
+		.sidebar{
+			width: 200px;
+			box-sizing: border-box;
+			position: fixed;
+		}
+		.container{
+			width: 600px;
+			margin-left: 200px;
+			box-sizing: border-box;
+		}
+		.border{
+			border: 1px solid black;
+		}
+		.center{
+			text-align: center;
+		}
+		*{
+			font-family: 'Arial';
+			font-size: 30px;
+		}
+		.sidebar a {
+			display: block;
+			padding: 10px;
+			color: black;
+			text-decoration: none;
+			font-size: 30px;
+		}
+		.absolute{
+			position: absolute;
+			top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    margin: auto;
+		    height: 50%;
+		}
+		section{
+			height: 950px;
+			margin-bottom: 50px;
+			position: relative;
+		}
+		h1{
+			font-size: 50px;
+		}
+		.example{
+
+		}
+	</style>
+</head>
+<body>
+	<div class="main-container">
+
+		<sidebar class="sidebar">
+			<a href="#1">1</a>
+			<a href="#2">2</a>
+			<a href="#3">3</a>
+			<a href="#4">4</a>
+			<a href="#5">5</a>
+		</sidebar>
+
+		<div class="container">
+
+			<section id="1">
+				<div class="absolute">
+					<div class="center">#1</div>
+					<h1 class="center">Understanding the CSS Box Model</h1>
+				</div>
+			</section>
+
+			<section id="2">
+				<div class="absolute">
+					<div class="center">#2</div>
+					<p>In CSS, the term "box model" is used when talking about design and layout. </p>					
+				</div>
+			</section>
+
+			<section id="3">
+				<div class="absolute">
+					<div class="center">#3</div>
+					<p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.</p>
+				</div>
+			</section>
+
+			<section id="4">
+				<div class="absolute">
+					<div class="center">#4</div>
+					<div class="example">This is the content</div>
+				</div>
+			</section>
+
+			<section id="5">
+				<div class="absolute">
+					<div class="center">#5</div>
+					<p>If we don't specify a width and heght, then the content itself will take up 100% of the width of its parent container, an the height of that box will be determined by how much content there is.</p>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>
