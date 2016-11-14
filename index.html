@@ -80,6 +80,42 @@
 		.example{
 
 		}
+		*{
+			/*border: 1px solid blue;*/
+		}
+		.content{
+			color: white;
+			background: #8bb5c0;
+			padding: 20px;
+			border: 3px dashed black;
+		}
+		.padding{
+			background: #c2cf8a;
+			padding: 40px;
+			color: white;
+		}
+		.border-x{
+			border: 10px solid black;
+		}
+		.margin{
+			padding: 40px;
+			background: #f9cc9d;
+		}
+		.wrapper{
+			width: 600px;
+			background: #9BA6A5;
+		}
+		article{
+			padding: 50px;
+			/*width: 100%;*/
+		}
+		.wrapper p{
+			width: 300px;
+			float: left;
+			padding: 10px;
+			border: 1px solid blue;
+			box-sizing: border-box;
+		}
 	</style>
 </head>
 <body>
@@ -91,6 +127,9 @@
 			<a href="#3">3</a>
 			<a href="#4">4</a>
 			<a href="#5">5</a>
+			<a href="#6">6</a>
+			<a href="#7">7</a>
+			<a href="#8">8</a>
 		</sidebar>
 
 		<div class="container">
@@ -119,16 +158,69 @@
 			<section id="4">
 				<div class="absolute">
 					<div class="center">#4</div>
-					<div class="example">This is the content</div>
+					<div class="example">
+						<div class="margin">
+							<div class="border-x">
+								<div class="padding center">
+									<div class="content center">
+										This is the content
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 
 			<section id="5">
 				<div class="absolute">
 					<div class="center">#5</div>
-					<p>If we don't specify a width and heght, then the content itself will take up 100% of the width of its parent container, an the height of that box will be determined by how much content there is.</p>
+					<p>If we don't specify a width and heght, then the content itself will take up 100% of the width of its parent container, and the height of that box will be determined by how much content there is.</p>
 				</div>
 			</section>
+
+			<section id="6">
+				<div class="absolute">
+					<div class="center">#6</div>
+					<p>By default, if there is enough content within a box, the box will span the full width of its parent container. However, the box will behave differently if you specify 100% width.</p>
+				</div>
+			</section>
+
+			<section id="7">
+				<div class="absolute">
+					<div class="center">#7</div>
+					<div class="wrapper">
+						<h2 class="center">Article</h2>
+						<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="8">
+				<div class="absolute">
+					<div class="center">#8</div>
+					<div class="wrapper">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+			</section>
+
 		</div>
 	</div>
 </body>
