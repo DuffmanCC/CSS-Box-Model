@@ -119,7 +119,16 @@
 		}
 		.bg-grey{
 			background: #9BA6A5;
-			position: absolute;
+			/*position: absolute;*/
+			/*float: left;*/
+			/*width: 50%;*/
+		}
+		.inline{
+			display: inline;
+			padding: 10px;
+		}
+		.bg-transparent{
+			background-color: rgba(255, 0, 0, 0.5);
 		}
 	</style>
 </head>
@@ -137,6 +146,13 @@
 			<a href="#8">8</a>
 			<a href="#9">9</a>
 			<a href="#10">10</a>
+			<a href="#11">11</a>
+			<a href="#12">12</a>
+			<a href="#13">13</a>
+			<a href="#14">14</a>
+			<a href="#15">15</a>
+			<a href="#16">16</a>
+			<a href="#17">17</a>
 		</sidebar>
 
 		<div class="container">
@@ -242,6 +258,69 @@
 					<div class="center">#10</div>
 					
 					<p>The box model will be influenced in different ways depending on whether a content block is relatively or absolutely positioned, as well as by whether it’s floating.</p>
+					
+				</div>
+			</section>
+
+			<section id="11">
+				<div class="absolute">
+					<div class="center">#11</div>
+					
+					<h2 class="center bg-grey">Inline Elements</h2>
+					
+				</div>
+			</section>
+
+			<section id="12">
+				<div class="absolute">
+					<div class="center">#12</div>
+					
+					<p>Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.</p>
+					
+				</div>
+			</section>
+
+			<section id="13">
+				<div class="absolute">
+					<div class="center">#13</div>
+					
+					<p>A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</p>
+					
+				</div>
+			</section>
+
+			<section id="14">
+				<div class="absolute">
+					<div class="center">#14</div>
+					
+					<p class="inline border bg-transparent">An inline element does not start on a new line and only takes up as much width as necessary.</p>
+					
+				</div>
+			</section>
+
+			<section id="15">
+				<div class="absolute">
+					<div class="center">#15</div>
+					
+					<h2 class="center bg-grey">Box-Sizing</h2>
+					
+				</div>
+			</section>
+
+			<section id="16">
+				<div class="absolute">
+					<div class="center">#16</div>
+					
+					<p>By default, a box’s width, padding, border, and margin are all added together to determine the full dimensions of the box. The box-sizing property is used to tell the browser what the sizing properties (width and height) should include.</p>
+					
+				</div>
+			</section>
+
+			<section id="17">
+				<div class="absolute">
+					<div class="center">#17</div>
+					
+					<h2 class="center bg-grey">End</h2>
 					
 				</div>
 			</section>
