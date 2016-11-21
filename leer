@@ -1,0 +1,20 @@
+1 - hablar que fue uno de los primeros cursos que hize y que parece más fácel de lo que es.
+2 - Leer y pasar a 3.
+3 - Poner borde a todos los elementos.
+4 - F12 y mostrar los elementos y el cuadro de abajo.
+5 - Leer y pasar a 6.
+6 - Primer problema, no es lo mismo el 100% by default que especificar el 100%.
+7 - Demostrarlo.
+8 - Añadir padding y ver que no cabe, quitar padding y solo con el border ver que no cabe, restar padding y border para ver como se hace correctamente.
+9 - Saltar a 10.
+10 - Hablar de los 4 tipos de position y de los floats y decir que no quieres ir deep into it.
+volver al 9 y mostrar que ocurre si cambio a absolute o a float.
+11 - Pasar a 12.
+12 - Hablar de los block element and inline elements. Leer y pasar a 13.
+13 - Leer y pasar a 14.
+14 - Mostrar el block element y convertirlo a inline y ver lo que pasa.
+15 - Leer y pasar a 16.
+16 - Leer y pasar a 7.
+Utilizar la propiedad box-sizing para ver lo útil que es. Y decir que Bootstrap la usa, por ejemplo.
+
+
